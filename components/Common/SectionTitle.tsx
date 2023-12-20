@@ -1,3 +1,4 @@
+
 const SectionTitle = ({
   title,
   paragraph,

@@ -59,7 +59,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Typography>Churn</Typography>
+                  Churn
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -106,11 +106,11 @@ const Header = () => {
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             }`}
                           >
-                            <Typography>{menuItem.title}</Typography>
+                            {menuItem.title}
                           </Link>
                         ) : (
                           <>
-                            <p
+                            {/* <p
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
@@ -125,8 +125,8 @@ const Header = () => {
                                   />
                                 </svg>
                               </span>
-                            </p>
-                            <div
+                            </p> */}
+                            {/* <div
                               className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
                               }`}
@@ -140,7 +140,7 @@ const Header = () => {
                                   {submenuItem.title}
                                 </Link>
                               ))}
-                            </div>
+                            </div> */}
                           </>
                         )}
                       </li>
