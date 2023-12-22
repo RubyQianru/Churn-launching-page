@@ -1,11 +1,12 @@
 import NewsLatterBox from "./NewsLatterBox";
+import { Button } from "@mui/material";
 
 const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
+          {/* <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
               className="wow fadeInUp shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
@@ -66,14 +67,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
-                      Submit Ticket
-                    </button>
+                    <Button  size="large" variant="contained">
+                      Submit
+                    </Button>
                   </div>
                 </div>
               </form>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
             <NewsLatterBox />
           </div>
