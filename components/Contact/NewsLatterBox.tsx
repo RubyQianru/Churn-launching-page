@@ -2,6 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { Button } from "@mui/material";
+import TextField from '@mui/material/TextField';
+
 
 const NewsLatterBox = () => {
   const { theme } = useTheme();
@@ -19,23 +21,27 @@ const NewsLatterBox = () => {
         massa quis lectus.
       </p>
       <div>
-        <input
+        <TextField
           type="text"
-          name="name"
-          placeholder="Enter your name"
-          className="border-stroke dark:text-body-color-dark dark:shadow-two mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+          id="outlined-basic" 
+          label="Enter your name" 
+          variant="outlined"
+          className="mb-4 w-full"
         />
-        <input
+        <TextField
           type="email"
-          name="email"
-          placeholder="Enter your email"
-          className="border-stroke dark:text-body-color-dark dark:shadow-two mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+          id="outlined-basic" 
+          label="Enter your email" 
+          variant="outlined"
+          className="mb-4 w-full"
+
         />
 
-        <div className="flex justify-center px-6 py-3">
+        <div className="flex justify-center">
         <Button
-          variant="outlined"
+          variant="contained"
           size="large"
+          className="mb-4 w-full bg-[#1976D2]"
         >
           Subscribe
         </Button>

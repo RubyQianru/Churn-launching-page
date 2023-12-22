@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import { Button } from "@mui/material";
+import { ArrowUpward } from '@mui/icons-material';
+
+
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,13 +34,14 @@ export default function ScrollToTop() {
   return (
     <div className="fixed bottom-8 right-8 z-[99]">
       {isVisible && (
-        <div
+        <Button
           onClick={scrollToTop}
           aria-label="scroll to top"
-          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+          className="h-15 w-10 bg-[#1976D2]"
+          variant="contained"
         >
-          <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-        </div>
+          <ArrowUpward/>
+        </Button>
       )}
     </div>
   );
