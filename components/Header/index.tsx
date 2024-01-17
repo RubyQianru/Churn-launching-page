@@ -4,8 +4,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 
 const Header = () => {
   // Navbar toggle
@@ -147,23 +145,18 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-              <Stack spacing={2} direction="row">
-                <Button
-                  className="hidden text-dark dark:text-white md:block"
+                <Link
                   href="/signin"
-                  size="large"
+                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
-                    Sign In
-                </Button>
-                <Button
-                  className="ease-in-up shadow-btn hidden transition duration-300 md:block"
-                  variant="contained"
+                  Sign In
+                </Link>
+                <Link
                   href="/signup"
-                  size="large"
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-md bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   Sign Up
-                </Button>
-                </Stack>
+                </Link>
                 <div>
                   <ThemeToggler />
                 </div>
