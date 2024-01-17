@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NewsLatterBox from "../Contact/NewsLatterBox";
+import './index.css'
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
+                className="newlettercontainer wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
                 <NewsLatterBox/>
