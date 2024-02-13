@@ -1,4 +1,10 @@
 
+.newlettercontainer {
+  position: absolute;
+  z-index: 1; 
+  transition: left 5s ease, top 5s ease;
+}
+
 .newlettercontainer::before,
 .newlettercontainer::after {
   content: '';
@@ -21,8 +27,8 @@
     height: 80vw;
     margin-left: -200px;
     filter:blur(90px);  
-    top: calc(50vh - 50vw/2);
-    left: calc(50vw );
+    transition: left 1s ease, top 1s ease;
+
   }
   
   .newlettercontainer::after {
@@ -38,8 +44,8 @@
     width: 500px;
     height: 700px;
     filter:blur(90px);
-    top: calc(50vh - 50vw/2);
-    left: calc(50vw - 50vw/2);
+    transition: left 1s ease, top 1s ease;
+
   }
 
   @keyframes animateBefore {
