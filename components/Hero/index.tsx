@@ -10,24 +10,26 @@ const windowWidth: number = typeof window !== 'undefined' ? window.innerWidth : 
 
 //top: 50vh - 50vw/2
 //left: 50vw
-const initLeft = windowWidth/2 * window.devicePixelRatio
-const initTop = (windowHeight/2 - windowWidth/4) * window.devicePixelRatio
+// const initLeft = windowWidth/2 * window.devicePixelRatio
+// const initTop = (windowHeight/2 - windowWidth/4) * window.devicePixelRatio
+
 const Hero = () => {
 
-  const [containerStyle, setContainerStyle] = useState({ 
-    left: initLeft + 'px', 
-    top: initTop + 'px'
-  })
-  const mousemove = (e: MouseEvent<HTMLDivElement>) => {
-    const mouseX = e.clientX * window.devicePixelRatio - initLeft
-    const mouseY = e.clientY * window.devicePixelRatio - initTop
+  // const [containerStyle, setContainerStyle] = useState({ 
+  //   left: initLeft + 'px', 
+  //   top: initTop + 'px'
+  // })
+  
+  // const mousemove = (e: MouseEvent<HTMLDivElement>) => {
+  //   const mouseX = e.clientX * window.devicePixelRatio - initLeft
+  //   const mouseY = e.clientY * window.devicePixelRatio - initTop
 
-    console.log(mouseX, mouseY)
-    setContainerStyle({
-      left: mouseX + 'px',
-      top: mouseY + 'px'
-    })
-  }
+  //   console.log(mouseX, mouseY)
+  //   setContainerStyle({
+  //     left: mouseX + 'px',
+  //     top: mouseY + 'px'
+  //   })
+  // }
 
   return (
     <>
@@ -46,8 +48,8 @@ const Hero = () => {
                 <div
                   className="newlettercontainer"
                   data-wow-delay=".2s"
-                  onMouseMove={mousemove}
-                  style={containerStyle}
+                  // onMouseMove={mousemove}
+                  // style={containerStyle}
                 >
                 </div>
               </div>
