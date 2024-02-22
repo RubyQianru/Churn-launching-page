@@ -3,32 +3,34 @@
 import { Mouse } from "@mui/icons-material";
 import NewsLatterBox from "../Contact/NewsLatterBox";
 import './index.css'
-import React, { MouseEvent, useState } from 'react';
+import React, { MouseEvent, useState, useEffect } from 'react';
 
 const windowHeight: number = typeof window !== 'undefined' ? window.innerHeight : 0
 const windowWidth: number = typeof window !== 'undefined' ? window.innerWidth : 0
 
-//top: 50vh - 50vw/2
-//left: 50vw
-// const initLeft = windowWidth/2 * window.devicePixelRatio
-// const initTop = (windowHeight/2 - windowWidth/4) * window.devicePixelRatio
 
 const Hero = () => {
+  // const [opacity, setOpacity] = useState()
+  const [containerStyle, setContainerStyle] = useState({
+    left: '0vw',
+    top: '80vh',
+  });
 
-  // const [containerStyle, setContainerStyle] = useState({ 
-  //   left: initLeft + 'px', 
-  //   top: initTop + 'px'
-  // })
+  useEffect(() => {
+    setContainerStyle({
+      left: '40vw',
+      top: '5vh',
+    });
+  }, []);
   
   // const mousemove = (e: MouseEvent<HTMLDivElement>) => {
-  //   const mouseX = e.clientX * window.devicePixelRatio - initLeft
-  //   const mouseY = e.clientY * window.devicePixelRatio - initTop
+  //   const mouseX = e.clientX;
+  //   const opacity = (mouseX / windowWidth) ;
 
-  //   console.log(mouseX, mouseY)
   //   setContainerStyle({
-  //     left: mouseX + 'px',
-  //     top: mouseY + 'px'
-  //   })
+  //     left: '40vw',
+  //     top: '5vh',
+  //   });
   // }
 
   return (
@@ -49,7 +51,7 @@ const Hero = () => {
                   className="newlettercontainer"
                   data-wow-delay=".2s"
                   // onMouseMove={mousemove}
-                  // style={containerStyle}
+                  style={containerStyle}
                 >
                 </div>
               </div>
