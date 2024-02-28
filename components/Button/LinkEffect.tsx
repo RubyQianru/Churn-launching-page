@@ -1,11 +1,15 @@
+import Link from "next/link";
+
 import './ButtonEffect.css'
 
-const ButtonEffect = (
+const LinkEffect = (
     {
         text,
+        href,
         style
     } : {
-        text: string
+        text: string,
+        href: string,
         style: string
     }
 ) => {
@@ -30,13 +34,14 @@ const ButtonEffect = (
         
     }
     return (
-        <button 
+        <Link 
+            href={href}
             className={style}
             onClick={createRipple}
         >
             {text}
-        </button>
+        </Link>
     )
 }
 
-export default ButtonEffect
+export default LinkEffect
