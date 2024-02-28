@@ -1,3 +1,5 @@
+
+"use client"
 import './ButtonEffect.css'
 
 const ButtonEffect = (
@@ -29,6 +31,7 @@ const ButtonEffect = (
         ripple.classList.add('ripple')
         
     }
+    
     return (
         <button 
             className={style}
