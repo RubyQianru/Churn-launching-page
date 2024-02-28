@@ -58,7 +58,7 @@ left: 50vw */
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-200px) scale(1.0);
+      transform: scale(1.0);
   
     }
     100% {

@@ -1,16 +1,15 @@
 'use client'
 
 import { Mouse } from "@mui/icons-material";
-import NewsLatterBox from "../Contact/NewsLatterBox";
+import NewsLatterBox from "../Contact/NewsLetterBox";
 import './index.css'
 import React, { MouseEvent, useState, useEffect } from 'react';
 
 const windowHeight: number = typeof window !== 'undefined' ? window.innerHeight : 0
 const windowWidth: number = typeof window !== 'undefined' ? window.innerWidth : 0
 
-
 const Hero = () => {
-  // const [opacity, setOpacity] = useState()
+
   const [containerStyle, setContainerStyle] = useState({
     left: '0vw',
     top: '80vh',
