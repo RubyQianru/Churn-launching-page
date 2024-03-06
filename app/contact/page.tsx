@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
+import NewsLatterBox from "@/components/Contact/NewsLetterBox";
 
 import { Metadata } from "next";
 
@@ -16,8 +17,9 @@ const ContactPage = () => {
         pageName="Contact Page"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
-
-      <Contact />
+      <div className="wow fadeInUp mx-auto max-w-[800px] text-center">
+        <NewsLatterBox />
+      </div>
     </>
   );
 };
