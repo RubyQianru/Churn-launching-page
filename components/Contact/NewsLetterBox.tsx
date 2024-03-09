@@ -14,8 +14,7 @@ const NewsLatterBox = () => {
         Join the Waitlist
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-black dark:text-white dark:border-white dark:border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
+        Be one of the first transform your perspective on credit.
       </p>
       <div>
         <input
@@ -40,7 +39,7 @@ const NewsLatterBox = () => {
         </div>
         
         <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-black dark:text-white">
-          No spam guaranteed, So please don’t send any spam mail.
+          No spam guaranteed.
         </p>
       </div>
 
