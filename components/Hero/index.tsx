@@ -48,15 +48,16 @@ const Hero = () => {
               <div className="mx-auto w-[1000px]">
               <NewsLatterBox/>    
               </div>
-              <div className="absolute top-3/4">
-                  <LearnMore/>
-                </div>  
+              
                 <div
                   className="newlettercontainer"
                   data-wow-delay=".2s"
                   style={{ ...containerStyle, '--scroll': `${scrollPosition}px` } as any}
                   >
                 </div>
+                <div className="mx-auto absolute top-3/4 mt-20 z-20">
+                  <LearnMore/>
+              </div>  
                 
                 
               </div>

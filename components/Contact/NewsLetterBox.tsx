@@ -33,10 +33,6 @@ const NewsLatterBox = () => {
             style="relative overflow-hidden shadow-submit dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-md bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
             text="Submit"
           />
-
-          <div className="flex justify-center">
-
-        </div>
         
         <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-black dark:text-white">
           No spam guaranteed.

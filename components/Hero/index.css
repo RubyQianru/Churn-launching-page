@@ -51,7 +51,9 @@ left: 50vw */
     animation: animateAfter 5s infinite ease ;
   }
 
-
+  .learnMore {
+    animation: blink 1s infinite ease alternate;
+  } 
 
   @keyframes animateBefore {
     0% {
@@ -76,3 +78,13 @@ left: 50vw */
       transform: translateY(calc( var(--scroll) * 0.7)) scale(1.0);
     }
   }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
