@@ -15,7 +15,6 @@ left: 50vw */
   content: '';
   position: absolute;
   z-index: -1;
-  transition: transform 0.3s ease;
 }
 
 .newlettercontainer::before{
@@ -30,10 +29,9 @@ left: 50vw */
     border-radius: 50%;
     width: 80vw;
     height: 80vw;
-    margin-left: -500px;
+    margin-left: -800px;
     filter:blur(100px);  
-    animation: animate 10s infinite ease alternate;
-    transform: translateY(calc(var(--scroll) * 0.5));
+    animation: animateBefore 5s infinite ease ;
   }
   
   .newlettercontainer::after {
@@ -50,18 +48,31 @@ left: 50vw */
     height: 60vh;
     margin-left: -800px;
     filter:blur(100px);
-    animation: animate 10s infinite ease alternate;
-    transform: translateY(calc(var(--scroll) * 0.5));
+    animation: animateAfter 5s infinite ease ;
   }
 
-  @keyframes animate {
+
+
+  @keyframes animateBefore {
     0% {
-      transform: scale(1.0);
+      transform: translateY(calc( var(--scroll) * 0.7)) scale(1.0);
     }
     50% {
-      transform: scale(1.3);
+      transform:  translateY(calc( var(--scroll) * 0.7)) scale(1.3);
     }
     100% {
-      transform: scale(1.0);
+      transform:  translateY(calc( var(--scroll) * 0.7)) scale(1.0);
+    }
+  }
+
+  @keyframes animateAfter {
+    0% {
+      transform:  translateY(calc( var(--scroll) * 0.7)) scale(1.0);
+    }
+    50% {
+      transform:  translateY(calc( var(--scroll) * 0.7)) scale(1.3);
+    }
+    100% {
+      transform: translateY(calc( var(--scroll) * 0.7)) scale(1.0);
     }
   }
