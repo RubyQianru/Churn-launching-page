@@ -29,7 +29,7 @@ left: 50vw */
     border-radius: 50%;
     width: 80vw;
     height: 80vw;
-    margin-left: -800px;
+    margin-left: -30vw;
     filter:blur(100px);  
     animation: animateBefore 5s infinite ease ;
   }
@@ -46,7 +46,7 @@ left: 50vw */
     border-radius: 50%;
     width: 40vw;
     height: 60vh;
-    margin-left: -800px;
+    margin-left: -30vw;
     filter:blur(100px);
     animation: animateAfter 5s infinite ease ;
   }

@@ -1,7 +1,6 @@
 
 import "./index.css"
 import ButtonEffect from "../Button/ButtonEffect";
-import { Button } from "@mui/material";
 
 const NewsLatterBox = () => {
 
@@ -34,9 +33,9 @@ const NewsLatterBox = () => {
             text="Submit"
           />
         
-        <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-black dark:text-white">
+        {/* <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-black dark:text-white">
           No spam guaranteed.
-        </p>
+        </p> */}
       </div>
 
     </div>
