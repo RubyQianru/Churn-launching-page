@@ -1,6 +1,6 @@
 'use client'
 
-import { Mouse } from "@mui/icons-material";
+import LearnMore from "./LearnMore";
 import NewsLatterBox from "../Contact/NewsLetterBox";
 import './index.css'
 import React, { MouseEvent, useState, useEffect } from 'react';
@@ -40,26 +40,28 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
-              >
-                <NewsLatterBox/>
+          <div className="w-full h-screen px-4 flex justify-center items-center text-center">
+              <div className="mx-auto w-[1000px]">
+              <NewsLatterBox/>    
+              </div>
+              <div className="absolute top-3/4">
+                  <LearnMore/>
+                </div>  
                 <div
                   className="newlettercontainer"
                   data-wow-delay=".2s"
                   style={{ ...containerStyle, '--scroll': `${scrollPosition}px` } as any}
                   >
                 </div>
+                
+                
               </div>
             </div>
           </div>
-        </div>
         
       </section>
     </>
