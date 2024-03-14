@@ -1,8 +1,10 @@
-
+/* top: 50vh - 50vw/2
+left: 50vw */
 .newlettercontainer {
   position: absolute;
   z-index: 1; 
   transition: top 5s ease, left 5s ease;
+  /* transition: left 5s ease; */
   margin-top: -100px;  
   left: 40vw;
   height: 60vh;
@@ -13,8 +15,7 @@
   content: '';
   position: absolute;
   z-index: -1;
-  transition: transform 0.3s ease; 
-
+  transition: transform 0.3s ease;
 }
 
 .newlettercontainer::before{
@@ -31,9 +32,8 @@
     height: 80vw;
     margin-left: -500px;
     filter:blur(100px);  
-    animation: animateBefore 10s infinite ease alternate;
-    transform: translateY(calc(-50% + var(--scroll) * 0.5)); 
-
+    animation: animate 10s infinite ease alternate;
+    transform: translateY(calc(var(--scroll) * 0.5));
   }
   
   .newlettercontainer::after {
@@ -50,33 +50,18 @@
     height: 60vh;
     margin-left: -800px;
     filter:blur(100px);
-    animation: animateBefore 10s infinite ease alternate;
-    transform: translateY(calc(-50% + var(--scroll) * 0.7)); /* Adjust translation */
-
+    animation: animate 10s infinite ease alternate;
+    transform: translateY(calc(var(--scroll) * 0.5));
   }
 
-  @keyframes animateBefore {
+  @keyframes animate {
     0% {
-      transform: translateY(0);
-    }
-    50% {
       transform: scale(1.0);
-  
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes animateAfter{
-    0% {
-      transform: translateX(0);
     }
     50% {
-      transform: translateX(-250px) scale(2.0);
-  
+      transform: scale(1.3);
     }
     100% {
-      transform: translateX(0);
+      transform: scale(1.0);
     }
   }

@@ -19,7 +19,7 @@ const Hero = () => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       setScrollPosition(scrollTop);
-      console.log(scrollPosition)
+      console.log(scrollTop)
 
     };
 
@@ -56,8 +56,8 @@ const Hero = () => {
                   className="newlettercontainer"
                   data-wow-delay=".2s"
                   // onMouseMove={mousemove}
-                  style={containerStyle}
-                >
+                  style={{ ...containerStyle, '--scroll': `${scrollPosition}px` } as any}
+                  >
                 </div>
               </div>
             </div>
