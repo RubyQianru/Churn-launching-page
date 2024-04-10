@@ -17,7 +17,7 @@ const featuresData: Feature[] = [
       "Utilizing our proprietary recommendation technology, we precisely forecast the return you can anticipate from every credit card available in the United States. Each card is then meticulously ranked according to your expected return and personal eligibility, ensuring you make the most informed choice tailored to your financial needs.",
   },
   {
-    id: 1,
+    id: 2,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -32,7 +32,7 @@ const featuresData: Feature[] = [
       "Leveraging spaCy alongside ARIMA models, our tailored credit-building strategy empowers you to effortlessly and confidently traverse the intricate landscape of credit. Receive a detailed, daily synopsis of actionable steps designed to enhance your credit score.",
   },
   {
-    id: 1,
+    id: 3,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
