@@ -1,0 +1,11 @@
+Model Information:
+* title:	Metal Credit Card
+* source:	https://sketchfab.com/3d-models/metal-credit-card-b6cff2460421408f84c9af7a85ce906e
+* author:	Maksym Nekleva (https://sketchfab.com/maksym.nekleva)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Metal Credit Card" (https://sketchfab.com/3d-models/metal-credit-card-b6cff2460421408f84c9af7a85ce906e) by Maksym Nekleva (https://sketchfab.com/maksym.nekleva) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

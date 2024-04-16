@@ -44,22 +44,20 @@ const Hero = () => {
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-          <div className="w-full h-screen px-4 flex justify-center items-center text-center">
-              <div className="mx-auto w-[1000px]">
-              <NewsLatterBox/>    
-              </div>
-              
-                <div
-                  className="newlettercontainer"
-                  data-wow-delay=".2s"
-                  style={{ ...containerStyle, '--scroll': `${scrollPosition}px` } as any}
-                  >
+            <div className="w-full h-screen px-4 flex justify-center items-center text-center">
+                <div className="mx-auto w-[1000px]">
+                <NewsLatterBox/>    
                 </div>
-                <div className="mx-auto absolute top-3/4 mt-20 z-20">
-                  <LearnMore/>
-              </div>  
                 
-                
+                  <div
+                    className="newlettercontainer"
+                    data-wow-delay=".2s"
+                    style={{ ...containerStyle, '--scroll': `${scrollPosition}px` } as any}
+                    >
+                  </div>
+                  <div className="mx-auto absolute top-3/4 mt-20 z-20">
+                    <LearnMore/>
+                </div>  
               </div>
             </div>
           </div>
