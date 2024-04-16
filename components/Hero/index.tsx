@@ -2,7 +2,7 @@
 
 import LearnMore from "./LearnMore";
 import NewsLatterBox from "../Contact/NewsLetterBox";
-import './index.css'
+import './index.css';
 import React, { MouseEvent, useState, useEffect } from 'react';
 
 const windowHeight: number = typeof window !== 'undefined' ? window.innerHeight : 0
