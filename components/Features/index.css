@@ -1,4 +1,3 @@
-
 .features {
     z-index: 15;
     position: relative;
@@ -50,13 +49,52 @@
     animation: animateAfter 5s infinite ease;
 }
 
+.typed-effect {
+    overflow: hidden;
+    border-right: transparent;
+    white-space: nowrap;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.float-effect {
+    animation: float 1.5s steps(40, end);
+}
+
+@keyframes float {
+    from {
+        padding-top: 50px;
+        opacity: 0;
+    }
+
+    to {
+        padding-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+
 @keyframes animateBefore {
     0% {
         transform: scale(1.0);
     }
+
     50% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1.0);
     }
@@ -66,9 +104,11 @@
     0% {
         transform: scale(1.0);
     }
+
     50% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1.0);
     }
