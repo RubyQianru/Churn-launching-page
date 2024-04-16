@@ -6,25 +6,30 @@ const SingleFeature = ({ id, feature }: { id: number, feature: Feature }) => {
 
   return (
     <div className="w-full">
-      <section className="wow fadeInUp lg:flex lg:justify-between" data-wow-delay=".15s">
+      <section
+        className="wow fadeInUp flex flex-col lg:flex-row items-center justify-center lg:justify-between"
+        data-wow-delay=".15s"
+      >
+        {isOdd && (
+          <div className={`flex h-[300px] w-[300px] mb-[50px] lg:h-[400px] lg:w-[400px] lg:mb=0 items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary order-1 lg:order-none ${!isOdd && 'lg:order-last'}`}>
+            {icon}
+          </div>
+        )}
 
-        { isOdd && <div className="mb-10 flex h-[400px] w-[400px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-          {icon}
-        </div>}
-
-        <div className="flex flex-col justify-center lg:w-[800px]">
-          <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-3xl xl:text-3xl">
+        <div className="flex flex-col justify-center lg:w-[800px] px-4 md:px-0 order-2">
+          <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl md:text-3xl">
             {title}
           </h3>
-          <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color lg:text-xl">
+          <p className="text-base font-medium leading-relaxed text-body-color md:text-lg">
             {paragraph}
           </p>
         </div>
 
-        { !isOdd && <div className="mb-10 flex h-[400px] w-[400px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-          {icon}
-        </div>}
-
+        {!isOdd && (
+          <div className={`flex h-[300px] w-[300px] mb-[50px] lg:h-[400px] lg:w-[400px] lg:mb-0 items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary order-1 lg:order-last`}>
+            {icon}
+          </div>
+        )}
       </section>
     </div>
   );
