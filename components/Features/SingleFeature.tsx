@@ -39,7 +39,7 @@ const SingleFeature = ({ id, feature }: { id: number, feature: Feature }) => {
         data-wow-delay=".15s"
       >
         {isOdd && (
-          <div className={`flex mb-[50px] h-[400px] w-[400px] lg:mb=0 items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary order-1 lg:order-none ${!isOdd && 'lg:order-last'}`}>
+          <div className={`flex mb-[50px] h-[400px] w-[400px] lg:mb=0 items-center justify-center text-primary order-1 lg:order-none ${!isOdd && 'lg:order-last'}`}>
             {icon}
           </div>
         )}
@@ -54,7 +54,7 @@ const SingleFeature = ({ id, feature }: { id: number, feature: Feature }) => {
         </div>
 
         {!isOdd && (
-          <div className={`flex mb-[50px] h-[400px] w-[400px] lg:mb-0 items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary order-1 lg:order-last`}>
+          <div className={`flex mb-[50px] h-[400px] w-[400px] lg:mb-0 items-center justify-center text-primary order-1 lg:order-last`}>
             {icon}
           </div>
         )}
