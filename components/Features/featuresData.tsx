@@ -1,11 +1,12 @@
 import { Feature } from "@/types/feature";
-import {Model} from "./creditCard";
+import ModelCanvas from "./creditCard";
+
 
 const featuresData: Feature[] = [
   {
     id: 1,
     icon: (
-      <Model/>
+      <ModelCanvas/>
     ),
     title: "Tailored Credit Card Recommendations",
     paragraph:

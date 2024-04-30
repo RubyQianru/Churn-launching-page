@@ -1,25 +1,31 @@
 "use client";
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from 'react'
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { useLoader } from "@react-three/fiber";
+import { Canvas } from '@react-three/fiber';
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('metal_credit_card/scene.gltf')
+function Model({ isMobile = false }) {
+  const gltf = useLoader(GLTFLoader, "/metal_credit_card/scene.gltf");
   return (
-    <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.235}>
-        <group rotation={[Math.PI / 2, 0, 0]}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Card__0.geometry}
-            material={materials['Scene_-_Root']}
-            rotation={[-Math.PI / 2, 0, 0]}
-          />
-        </group>
-      </group>
+    <group>
+      <pointLight position={[10, 10, 10]} />
+      <primitive
+        scale={isMobile ? 0.7 : 3}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        rotation={[0, 0, 0]}
+        object={gltf.scene}
+      />
     </group>
   )
 }
 
-useGLTF.preload('/metal_credit_card/scene.gltf')
+function ModelCanvas() {
+  return (
+    <Canvas>
+      <Model />
+    </Canvas>
+  );
+}
+
+export default ModelCanvas;
